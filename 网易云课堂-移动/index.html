@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>李游Leo老师前端讲堂</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div id="app">
+    <div class='logo-top'>
+        <a href="#" class='logo'>
+            <img src="image/logo.gif"/>
+        </a>
+        <div class='logo-text'>App查看</div>
+        <div class='logo-search'></div>
+    </div>
+    <!-- 轮播图 -->
+    <div class='pic-show'>
+        <img src="image/4e094ff2d73f44daa148aac758e72588.webp"/>
+        <ul class='pic-show-point'>
+            <li class='active'></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- 专业选择模块 -->
+    <div class='major-model'>
+        <ul class='major-model-ul'>
+            <li v-for="item in majorList">
+                <div class='major-model-ul-name'>{{item.title}}</div>
+                <p class='major-model-ul-text'>{{item.desc}}</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 分割线 -->
+    <div class='line-node'></div>
+
+    <!-- show-class-->
+    <div class='show-class'>
+        <h1>畅销好课</h1>
+        <ul class='show-class-ul'>
+            <li v-for="item in classList">
+                <a href="#">
+                    <div class='show-class-ul-pic'><img :src="item.img"></div>
+                    <p class='show-class-ul-text'>{{item.desc}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- line -->
+    <div class='line-node'></div>
+    <!-- special 专题 -->
+    <div class='show-class special'>
+        <h1>专题</h1>
+        <ul class='show-class-ul'>
+            <li>
+                <a href="#">
+                    <img src='image/pic-04.gif'/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src='image/pic-05.gif'/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src='image/pic-06.gif'/>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <div class='footer'>
+        ©️1997-2019 网易公司 版权所有
+    </div>
+
+    <!-- tab 栏-->
+    <div class='router'>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="image/home.gif"/>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class='st'>
+                <a href="#">
+                    <img src="image/st.gif"/>
+                    <p>我的学习</p>
+                </a>
+            </li>
+            <li class='user'>
+                <a href="#">
+                    <img src="image/user.gif"/>
+                    <p>账号</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+</body>
+<script src="./js/rem.js"></script>
+<script src="./js/vue2.6.0.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            majorList: [
+                {
+                    title: "零基础轻松学Python",
+                    desc: "微专业"
+                },
+                {
+                    title: "职",
+                    desc: "职场提升"
+                },
+                {
+                    title: "IT",
+                    desc: "编程开发"
+                },
+                {
+                    title: "AI",
+                    desc: "人工智能"
+                },
+                {
+                    title: "产",
+                    desc: "产品与运营"
+                },
+                {
+                    title: "设计",
+                    desc: "设计创意"
+                },
+                {
+                    title: "商",
+                    desc: "电子商务"
+                },
+                {
+                    title: "语",
+                    desc: "语言学习"
+                },
+            ],
+            classList: [
+                {
+                    img: "image/class-pic.gif",
+                    desc: "听的懂的金融思维课"
+                },
+                {
+                    img: "image/class-pic-2.gif",
+                    desc: "听的懂的金融思维课"
+                },
+                {
+                    img: "image/class-pic.gif",
+                    desc: "听的懂的金融思维课"
+                },
+                {
+                    img: "image/class-pic-2.gif",
+                    desc: "听的懂的金融思维课"
+                },
+                {
+                    img: "image/class-pic.gif",
+                    desc: "听的懂的金融思维课"
+                },
+                {
+                    img: "image/class-pic-2.gif",
+                    desc: "听的懂的金融思维课"
+                },
+            ],
+        },
+    })
+</script>
+</html>
