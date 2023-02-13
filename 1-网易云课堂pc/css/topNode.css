@@ -1,0 +1,534 @@
+/* topNode */
+.topNode-copy {
+    height: 56px;
+    display: none
+}
+
+/* topNode */
+.topNode {
+    height: 56px;
+    background: #303440;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.topNode .topNodeContent {
+    width: 1206px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.topNode .topNodeContent .logo {
+    float: left;
+    margin-top: 14px;
+}
+
+.topNode .searchNode {
+    width: 357px;
+    height: 36px;
+    border: 1px solid #191e2b;
+    background: #fff;
+    float: left;
+    border-radius: 19px;
+    margin: 9px 0 0 17px;
+    cursor: pointer;
+    color: #757575;
+    position: relative;
+}
+
+.topNode .searchNode .searchNode-ol {
+    width: 300px;
+    position: absolute;
+    height: auto;
+    left: 18px;
+    top: 40px;
+    background: #fff;
+    z-index: 102;
+    box-shadow: 0 0 5px #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.topNode .searchNode .searchNode-ol li {
+    height: 40px;
+    width: 100%;
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    text-indent: 16px;
+}
+
+.topNode .searchNode .searchNode-ol li a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    color: #3d3d3d;
+    font-size: 14px;
+}
+
+.topNode .searchNode .searchNode-ol li a:hover {
+    background: #f3f3f4;
+    color: #3aa54e;
+}
+
+.topNode .searchNode .searchNodeLeft.active {
+    color: #4eae54;
+    background-image: url(../image/jt-b2.gif);
+}
+
+.topNode .searchNode .searchNodeLeft {
+    height: 100%;
+    float: left;
+    width: 44px;
+    line-height: 36px;
+    font-size: 14px;
+    background: url(../image/jt-b.gif) no-repeat right 14px;
+    margin-left: 18px;
+    position: relative;
+}
+
+.topNode .searchNode .searchNodeLeft .searchNodeLeft-ul {
+    width: 60px;
+    height: 84px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 101;
+    left: -18px;
+    top: 35px;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: 3px;
+    padding-top: 4px;
+    display: none;
+}
+
+.topNode .searchNode .searchNodeLeft .searchNodeLeft-ul > li {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #313a3f;
+}
+
+.topNode .searchNode .searchNodeLeft .searchNodeLeft-ul > li:hover {
+    color: #58b35e;
+}
+
+.topNode .searchNode .searchNodeLeft .searchNodeLeft-ul > li.active {
+    background: #f5f5f5;
+    color: #58b35e;
+}
+
+.topNode .searchNode .searchNodeInput {
+    width: 198px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    float: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 14px;
+    color: #a2a2a2;
+
+}
+
+.topNode .searchNode .searchNodeRight {
+    width: 80px;
+    height: 100%;
+    float: right;
+    background: url(../image/search.gif) no-repeat 10px center, #4aaf4f;
+    color: white;
+    line-height: 36px;
+    text-indent: 29px;
+    font-size: 15px;
+    border-radius: 0 18px 18px 0;
+}
+
+.topNode .bannerTop {
+    height: 100%;
+    float: left;
+    margin-left: 31px;
+}
+
+.topNode .bannerTop li {
+    height: 100%;
+    float: left;
+    margin: 0 9px;
+    color: #f4f4f5;
+    cursor: pointer;
+    line-height: 56px;
+    text-shadow: 0 0 1px #000312;
+    font-size: 14px;
+    position: relative;
+}
+
+.topNode .bannerTop li.downloadApp {
+    padding-left: 18px;
+    background: url(../image/download.gif) no-repeat left center;
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show {
+    width: 350px;
+    height: 180px;
+    border: 1px solid #d5d6db;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: -128px;
+    z-index: 12;
+    display: none;
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show .downloadApp-show-left {
+    float: left;
+    width: 180px;
+    height: 100%;
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show .downloadApp-show-left img {
+    float: left;
+    margin: 23px 0 0 23px;
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show .downloadApp-show-text {
+    float: left;
+    width: 170px;
+    height: 17px;
+    color: #544c47;
+    text-shadow: 0 0 0 white;
+    margin: 24px 0 0 0;
+    line-height: 17px;
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show .downloadApp-jt {
+    width: 13px;
+    height: 10px;
+    position: absolute;
+    background: url(../image/jt-t-down.png);
+    left: 168px;
+    top: -10px;
+
+}
+
+.topNode .bannerTop li.downloadApp .downloadApp-show a {
+    float: left;
+    width: 150px;
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+.topNode .bannerTop li > .line-node {
+    width: 24px;
+    height: 3px;
+    background: #45b14a;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 50%;
+    margin-left: -12px;
+    display: none;
+}
+
+.topNode .bannerTop li:hover span {
+    color: #4ca753;
+}
+
+.topNode .bannerTop li:hover > .line-node {
+    display: block;
+}
+
+.topNode .bannerTop li.downloadApp:hover {
+    background-image: url(../image/download-h.gif);
+}
+
+.topNode .bannerTop li.see {
+    padding-left: 20px;
+    background: url(../image/lw.gif) no-repeat left center;
+}
+
+.topNode .bannerTop li.see:hover .see-show {
+    display: block;
+}
+
+.topNode .bannerTop li.see > .see-show {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width: 240px;
+    height: 244px;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: -70px;
+    z-index: 11;
+    display: none;
+}
+
+.topNode .bannerTop li.see > .see-show .see-show-jt {
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    background: url(../image/jt-t.png);
+    left: 118px;
+    top: -10px;
+}
+
+.topNode .bannerTop li.see > .see-show .see-show-text {
+    font-size: 13px;
+    height: 13px;
+    line-height: 13px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #262626;
+    text-shadow: 0 0 0 white;
+    margin-top: 18px;
+}
+
+.topNode .bannerTop li.see > .see-show .see-show-title {
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #5b5b5b;
+    text-shadow: 0 0 0 white;
+    margin-top: 15px;
+}
+
+.topNode .bannerTop li.see > .see-show .see-show-img {
+    float: left;
+    margin: 28px 0 0 58px;
+}
+
+.topNode .bannerTop li.line {
+    width: 5px;
+    background: url(../image/sg.gif) no-repeat 0 19px;
+    cursor: default;
+}
+
+.topNode .bannerTop li.bell {
+    width: 17px;
+    background: url(../image/tx.gif) no-repeat 0 center;
+}
+
+.topNode .bannerTop li.bell:hover {
+    background-image: url(../image/tx-h.gif);
+}
+
+.topNode .bannerTop li.shoppingCart {
+    width: 18px;
+    background: url(../image/gwc.gif) no-repeat 0 center;
+}
+
+.topNode .bannerTop li.shoppingCart:hover {
+    background-image: url(../image/gwc-h.gif);
+}
+
+.topNode .user {
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.topNode .user img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #1c2535;
+    border-radius: 50%;
+    float: right;
+    margin-top: 11px;
+    margin-left: 7px;
+}
+
+.topNode .user span {
+    height: 100%;
+    float: left;
+    line-height: 56px;
+    font-size: 14px;
+    color: white;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.topNode .user .user-ul {
+    width: 160px;
+    height: 218px;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #dbd9d8;
+    right: 0;
+    top: 50px;
+    z-index: 101;
+    padding: 8px;
+    display: none;
+}
+
+.topNode .user .user-ul li {
+    width: 100%;
+    height: 36px;
+    float: left;
+}
+
+.topNode .user .user-ul li.border-bottom-li {
+    border-bottom: 1px solid #ebecec;
+}
+
+.topNode .user .user-ul li:hover {
+    background: #f3f4f6;
+}
+
+.topNode .user .user-ul li a .user-li-span-l {
+    float: left;
+    color: #98999a;
+    line-height: 36px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.topNode .user .user-ul li a .user-li-span-r {
+    float: right;
+    color: #98999a;
+    line-height: 36px;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #fd9a2f;
+}
+
+.topNode .user .user-ul li a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: #98999a;
+    text-indent: 10px;
+}
+
+.topNode .user .user-ul .user-jt {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: -9px;
+    background: url(../image/jt-user-t.png);
+}
+
+bannerTop-my {
+    position: relative;
+}
+
+.bannerTop-my .bannerTop-my-content {
+    display: none;
+    width: 261px;
+    position: absolute;
+    height: auto;
+    border: 1px solid #dddddd;
+    padding: 7px 0;
+    left: 0;
+    top: 44px;
+    background: #fff;
+    z-index: 120;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-top {
+    width: 261px;
+    float: left;
+    height: 22px;
+    color: #303030;
+    font-size: 13px;
+    line-height: 22px;
+    text-indent: 10px;
+    text-shadow: 0 0 0 white;
+    cursor: auto;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul {
+    float: left;
+    width: 261px;
+    height: auto;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li {
+    width: 100%;
+    height: 51px;
+    float: left;
+    margin: 0;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li a .bannerTop-my-content-ul-li-left-node {
+    width: 52px;
+    height: 51px;
+    float: left;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li a .bannerTop-my-content-ul-li-left-node img {
+    float: left;
+    margin: 8px 0 0 10px;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li:hover {
+    background: #f6f6f6;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li:hover a .bannerTop-my-content-ul-li-right-name {
+    color: #39a03d;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li a .bannerTop-my-content-ul-li-right-name {
+    float: left;
+    width: 209px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #161616;
+    text-shadow: 0 0 0 white;
+    margin-top: 10px;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-ul li a .bannerTop-my-content-ul-li-right-now {
+    float: left;
+    width: 209px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #161616;
+    color: #999999;
+    text-shadow: 0 0 0 white;
+    margin-top: 5px;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-more {
+    width: 261px;
+    height: 40px;
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+    color: #565656;
+    text-align: center;
+    text-shadow: 0 0 0 white;
+    background: #f6f6f6;
+}
+
+.bannerTop-my .bannerTop-my-content .bannerTop-my-content-more:hover {
+    color: #3e9f38;
+}
+
+.bannerTop-my .user-jt {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    left: 21px;
+    top: -9px;
+    background: url(../image/jt-user-t.png);
+}
+/*topNode end*/

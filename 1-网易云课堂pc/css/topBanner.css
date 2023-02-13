@@ -1,0 +1,145 @@
+/*topBanner*/
+.topBanner {
+    width: 1208px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+.topBanner > li {
+    float: left;
+    height: 56px;
+    line-height: 66px;
+    font-size: 16px;
+    margin-right: 66px;
+    position: relative;
+    font-family: "Arial", "Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"
+}
+
+.topBanner > li > a {
+    color: #424242;
+}
+
+.topBanner > li.active > a {
+    color: #43ac49;
+}
+
+.topBanner > li .greenLine {
+    width: 24px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: 0px;
+    background: #33a841;
+    display: none;
+    z-index: 101;
+}
+
+.topBanner > li.active .greenLine {
+    display: block;
+}
+
+.topBanner > li > a:hover {
+    color: #43ac49;
+}
+
+.topBanner > li:hover .greenLine {
+    display: block;
+}
+
+.topBanner > li.right {
+    margin-right: 0;
+    position: relative;
+}
+
+.topBanner > li.right > a {
+    float: left;
+    margin-top: 29px;
+    width: 18px;
+    height: 4px;
+    line-height: 0;
+}
+
+.topBanner > li.right:hover .right-ol {
+    display: block;
+}
+
+.topBanner > li.right .right-ol {
+    width: 88px;
+    height: 135px;
+    background: #fff;
+    top: 44px;
+    left: -37px;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.topBanner > li.right .right-ol li {
+    width: 100%;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+}
+
+.topBanner > li.right .right-ol li:hover a {
+    color: #4eae54;
+    font-weight: bold;
+}
+
+.topBanner > li.right .right-ol li:hover .lineRight {
+    display: block;
+}
+
+.topBanner > li.right .right-ol li .lineRight {
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 10.5px;
+    background: #40a34b;
+    display: none;
+}
+
+.topBanner > li.right .right-ol li a {
+    color: #393939;
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.topBanner > li .active-ol {
+    width: 88px;
+    z-index: 99;
+    position: absolute;
+    background: #fff;
+    top: 53px;
+    left: 0;
+    box-shadow: 0 0 5px #ccc;
+    display: none;
+}
+
+.topBanner > li .active-ol li {
+    width: 100%;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+
+.topBanner > li .active-ol li a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-size: 13px;
+    color: #7f7f7f;
+    text-indent: 17px;
+}
+
+.topBanner > li .active-ol li:hover a {
+    font-weight: bold;
+    color: black;
+}

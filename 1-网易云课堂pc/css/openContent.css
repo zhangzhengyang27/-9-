@@ -1,0 +1,152 @@
+/*open-content*/
+.open-content {
+    width: 1206px;
+    height: 213px;
+    margin: 35px auto 0;
+    position: relative;
+}
+
+.open-content h2 {
+    font-size: 24px;
+    float: left;
+    line-height: 24px;
+    height: 24px;
+}
+
+.open-content .more {
+    font-size: 14px;
+    color: #696969;
+    position: absolute;
+    right: 1px;
+    top: 5px;
+    padding-right: 27px;
+    background: url(../image/more-jt.png) no-repeat right center;
+}
+
+.open-content .open-content-slider {
+    width: 1128px;
+    height: 164px;
+    float: left;
+    margin-left: 38px;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.open-content .open-content-slider .open-content-slider-card {
+    width: 1612px;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: .7s;
+}
+
+.open-content .open-content-slider .open-content-slider-card li {
+    width: 351px;
+    border: 1px solid #f1f1f1;
+    border-radius: 6px;
+    height: 141px;
+    float: left;
+    margin-right: 25px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li > a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.open-content .open-content-slider .open-content-slider-card li:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .card-user {
+    width: 112px;
+    height: 100%;
+    float: left;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .card-user img {
+    float: left;
+    margin: 12px 0 0 12px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .time {
+    float: left;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+    margin-top: 16px;
+    width: 239px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .content {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #2a2a2a;
+    width: 239px;
+    float: left;
+    margin-top: 14px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .user-name {
+    height: 23px;
+    width: 239px;
+    float: left;
+    font-size: 14px;
+    line-height: 23px;
+    color: #3d3d3d;
+    margin-top: 11px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .user-name .title-box {
+    float: left;
+    width: 56px;
+    height: 21px;
+    border: 1px solid #fadfa9;
+    border-radius: 3px;
+    background: #fefaf2;
+    color: #f19400;
+    text-align: center;
+    line-height: 21px;
+    font-size: 12px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .user-name .title-user {
+    float: left;
+    height: 100%;
+    margin-right: 17px;
+}
+
+.open-content .open-content-slider .open-content-slider-card li .bottom-title {
+    font-size: 12px;
+    color: #575757;
+    line-height: 12px;
+    height: 12px;
+    margin-top: 8px;
+    float: left;
+    width: 239px;
+}
+
+.open-content .card-left {
+    width: 14px;
+    height: 23px;
+    cursor: pointer;
+    position: absolute;
+    background: url(../image/l-jt.png);
+    left: 3px;
+    top: 110px;
+}
+
+.open-content .card-right {
+    width: 14px;
+    height: 23px;
+    cursor: pointer;
+    position: absolute;
+    background: url(../image/r-jt.png);
+    right: 3px;
+    top: 110px;
+}

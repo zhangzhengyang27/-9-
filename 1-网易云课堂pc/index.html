@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/topNode.css">
+    <link rel="stylesheet" type="text/css" href="css/topBanner.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/openContent.css">
+    <link rel="stylesheet" type="text/css" href="css/live.css">
+    <link rel="stylesheet" type="text/css" href="css/system.css">
+    <link rel="stylesheet" type="text/css" href="css/technology.css">
+    <link rel="stylesheet" type="text/css" href="css/web.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/link.css">
+    <link rel="stylesheet" type="text/css" href="css/mask.css">
+</head>
+<body>
+<div id="app">
+    <!-- topNode -->
+    <div class='topNode-copy'></div>
+    <div class="topNode">
+        <div class="topNodeContent">
+            <a href="#" class="logo">
+                <img src="image/logo.gif" alt="">
+            </a>
+            <!--  搜索节点 -->
+            <div class='searchNode'>
+                <div class='searchNodeLeft'>
+                    <span class='searchNodeLeftText'>课程</span>
+                    <ul class='searchNodeLeft-ul'>
+                        <li class='active'>课程</li>
+                        <li>网校</li>
+                    </ul>
+                </div>
+                <input type="" name="" class='searchNodeInput' placeholder="零基础学JavaScript">
+                <a class='searchNodeRight' href="#">搜索</a>
+                <ol class='searchNode-ol'>
+                    <li class='first'>热门搜索</li>
+                </ol>
+            </div>
+            <ul class="bannerTop">
+                <li class='downloadApp'>
+                    <span>下载APP</span>
+                    <div class='line-node'></div>
+                    <div class='downloadApp-show'>
+                        <div class='downloadApp-jt'></div>
+                        <div class='downloadApp-show-left'>
+                            <img src="image/ewm-t-l.gif">
+                        </div>
+                        <p class='downloadApp-show-text'>扫码下载官方App</p>
+                        <a href="#"><img src="image/show-app.gif"></a>
+                        <a href="#"><img src="image/show-app.gif"></a>
+                        <!-- <a href="#"><img src="image/show-ad.gif"></a> -->
+                    </div>
+                </li>
+                <li class='see'>
+                    <span>关注领福利</span>
+                    <div class='line-node'></div>
+                    <div class='see-show'>
+                        <div class='see-show-jt'></div>
+                        <p class='see-show-text'>关注云课堂官方微信号</p>
+                        <p class='see-show-title'>-领取课程免费福利，超值学习资料-</p>
+                        <img class='see-show-img' src="image/ewm-t.gif">
+                    </div>
+                </li>
+                <li>
+                    <span>会员中心</span>
+                    <div class="line-node"></div>
+                </li>
+                <li class="line"></li>
+                <li><span>管理后台</span></li>
+                <li class="bannerTop-my">
+                    <span>我的学习</span>
+                    <div class="bannerTop-my-content">
+                        <div class="user-jt"></div>
+                        <div class="bannerTop-my-content-top">最近学习的课程</div>
+                        <ul class="bannerTop-my-content-ul">
+                            <li v-for="item in myStudy">
+                                <a href="#">
+                                    <div class='bannerTop-my-content-ul-li-left-node'>
+                                        <img :src="item.img">
+                                    </div>
+                                    <p class='bannerTop-my-content-ul-li-right-name'>{{item.name}}</p>
+                                    <p class='bannerTop-my-content-ul-li-right-now'>{{item.nowStufy}}</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class='bannerTop-my-content-more'>查看更多></a>
+                    </div>
+                </li>
+                <li class='bell'></li>
+                <li class='shoppingCart'></li>
+                <li class='line'></li>
+            </ul>
+            <div class="user">
+                <span>李游Leo</span>
+                <img class='user-image' width="34" height="34" src="image/F07F9E9C63CDA35AB0E00DA054402EC2.png">
+                <ul class='user-ul'>
+                    <li class='border-bottom-li'><a href="#">正使用手机账号登陆</a></li>
+                    <li><a href="#"><span class='user-li-span-l'>我的优惠卷</span> <span
+                            class='user-li-span-r'>兑换</span></a>
+                    </li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">帮助与反馈</a></li>
+                    <li class='border-bottom-li'><a href="#">设置</a></li>
+                    <li><a href="#">退出</a></li>
+                    <div class='user-jt'></div>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- topBanner -->
+    <ul class='topBanner' id='topBanner'>
+        <li v-for="item in bannerList">
+            <a href="#" class="banner-a">{{item.name}}</a>
+            <div class='greenLine'></div>
+            <ol class='active-ol' v-for="item1 in item.type">
+                <li><a href="#">公办软件</a></li>
+                <li><a href="#">效率工具</a></li>
+                <li><a href="#">求职准备</a></li>
+                <li><a href="#">个人提升</a></li>
+                <li><a href="#">职场能力</a></li>
+                <li><a href="#">商业管理</a></li>
+                <li><a href="#">专业岗位</a></li>
+                <li><a href="#">电脑基础</a></li>
+            </ol>
+        </li>
+        <li class='right'>
+            <a href="#">
+                <img src="image/pointer.gif">
+            </a>
+            <ol class='right-ol'>
+                <li v-for="item in ['电商运行','职业考试','语言学习']">
+                    <a href="#">{{item}}</a>
+                    <div class='lineRight'></div>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- silder-content 轮播图-->
+    <div class='silder-content'>
+        <div class='silder-content-outerNode'>
+            <ul class='silder-content-UlNode'>
+                <li class='active'><img src="image/4de5a95b9c0a458c9c4f5595b0d12183.png"></li>
+                <li><img src="image/6ca7db807c3f448fa19039cae380ffb7.jpg"></li>
+                <li><img src="image/9da551a2ceee48fcae68db05b562cff1.jpg"></li>
+                <li><img src="image/a17ddac75cc944b9b0f5204156e2afa6.png"></li>
+                <li><img src="image/19055192bca54c5ea9622d8f672fd8e1.png"></li>
+                <li><img src="image/81f375340e0c48b7a4d1b9c853eab8ce.png"></li>
+                <li><img src="image/79b6a4b0bd644681b1d2a5ec3c10da65.jpg"></li>
+            </ul>
+            <ol class='silder-content-button'>
+                <li class='first active'><a href="#">专题特惠：前端零基础全栈之旅</a></li>
+                <li><a href="#">0元领取：站酷大神带你入门UI</a></li>
+                <li><a href="#">高效提升：3节课练就口语技能</a></li>
+                <li><a href="#">限时免费：如何获取稳定投资收益</a></li>
+                <li><a href="#">金融思维：25个经典案例解析</a></li>
+                <li><a href="#">免费试听：清华大神教你Python</a></li>
+                <li><a href="#">新课特惠：网课变现全流程进阶课</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- open-content 名师公开课-->
+    <div class='open-content'>
+        <div class='card-left'></div>
+        <div class='card-right'></div>
+        <h2>名师公开课</h2>
+        <a href="#" class='more'>更多</a>
+        <div class='open-content-slider'>
+            <ul class="open-content-slider-card">
+                <li v-for="item in openContent">
+                    <a href="#">
+                        <div class='card-user'>
+                            <img src="image/user.png">
+                        </div>
+                        <div class='time'>{{item.time}}</div>
+                        <div class='content'>{{item.title}}</div>
+                        <div class='user-name'>
+                            <span class='title-user'>{{item.author}}</span>
+                            <div class='title-box'>{{item.authorSub}}</div>
+                        </div>
+                        <div class='bottom-title'>{{item.type}}</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- live 课堂直播-->
+    <div class='open-content live'>
+        <h2>课堂直播</h2>
+        <a href="#" class='more'>更多</a>
+        <ul class='live-model'>
+            <li v-for="item in liveList">
+                <a href="#">
+                    <div class='teacher-pic'>
+                        <img src="image/6002D19DCC07E048FBDE4C84D276EB46.jpg">
+                    </div>
+                    <div class='time'>
+                        <span class='live-l'>{{item.time}}</span> <span class="g">开启提醒</span>
+                    </div>
+                    <div class='live-name'>{{item.title}}</div>
+                    <div class='live-teacher-name'>
+                        <span>{{item.author}}</span>
+                        <span>{{item.authorSub}}</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- system 系统化学习路径-->
+    <div class='system'>
+        <h2>系统化学习路径</h2><span class='system-title'>网易云课堂六大课程体系，让学习有章有序</span>
+        <ul class='system-ul'>
+            <li><a href="#"><img src="image/b8cbbde8bc98409aad5227fde070df7d.png"></a></li>
+            <li><a href="#"><img src="image/29696616fe6e495a9b191244f2bd0bea.png"></a></li>
+            <li><a href="#"><img src="image/9957cb6a888e40f08c36ce6a96804d32.png"></a></li>
+            <li><a href="#"><img src="image/7594f6916fc94a16af474856d1de8786.png"></a></li>
+            <li><a href="#"><img src="image/96ee5f4a9b954c1991b17ca577aaa00a.png"></a></li>
+            <li class='no'><a href="#"><img src="image/9c3adc02cea44377a91c6716201bbe4c.png"></a></li>
+        </ul>
+    </div>
+
+    <!-- technology 微专业模块 -->
+    <div class='open-content technology'>
+        <h2>微专业</h2>
+        <a href="#" class='more'>更多</a>
+        <ul class='technology-ul'>
+            <li v-for="item in techList">
+                <a href="#">
+                    <div class='technology-ul-outer'><img src="image/wzy-1.gif" class='technology-image'></div>
+                    <div class='technology-content'>
+                        <div class='technology-content-name'>{{item.title}}</div>
+                        <div class='technology-content-title'>{{item.desc}}</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 后端开发模块-->
+    <div class='system seckill web-model'>
+        <h2>后端开发</h2>
+        <ul class='seckill-tab-content-ul'>
+            <li v-for="item in contentList">
+                <a href="#">
+                    <div class='seckill-tab-content-ul-outer'><img src="image/web-leo.gif"></div>
+                    <div class='seckill-tab-content-ul-name'>{{item.title}}</div>
+                    <div class='seckill-tab-content-ul-user'>{{item.name}}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- mask 遮罩层-->
+    <div class='mask'></div>
+    <!-- alertNode 兴趣弹窗模块-->
+    <div class='alertNode'>
+        <div class='alertNode-closed' id='alertNodeClosed'></div>
+        <div class='alertNode-topName'>
+            <span class='alertNode-topName-choose'>请选择你的学习兴趣</span>
+            <span class='alertNode-topName-title'>至少选择1个，可随时调整</span>
+        </div>
+        <ul class='alertNode-ul'>
+            <li class='active'>
+                职场提升
+                <div class='line'></div>
+            </li>
+            <li>
+                编程与开发
+                <div class='line'></div>
+            </li>
+            <li>
+                AI/数据科学
+                <div class='line'></div>
+            </li>
+            <li>
+                生活兴趣
+                <div class='line'></div>
+            </li>
+            <li>
+                设计创意
+                <div class='line'></div>
+            </li>
+            <li>
+                产品与运营
+                <div class='line'></div>
+            </li>
+            <li>
+                电商运营
+                <div class='line'></div>
+            </li>
+            <li>
+                职业考试
+                <div class='line'></div>
+            </li>
+            <li class='no'>
+                语言学习
+                <div class='line'></div>
+            </li>
+        </ul>
+        <div class='alertNode-content'>
+            <ul class="show">
+                <li>办公软件</li>
+                <li>效率工具</li>
+                <li>求职准备</li>
+            </ul>
+            <ul>
+                <li>编程语言</li>
+                <li>前端开发</li>
+                <li>后端开发</li>
+            </ul>
+            <ul>
+                <li>人工智能</li>
+                <li>数据科学</li>
+                <li>大数据</li>
+            </ul>
+            <ul>
+                <li class='active'>投资理财</li>
+                <li class='active'>绘画</li>
+                <li class='active'>音乐</li>
+            </ul>
+            <ul>
+                <li>热门软件</li>
+                <li>综合设计</li>
+                <li>手绘插画</li>
+            </ul>
+            <ul>
+                <li>产品经理</li>
+                <li>新媒体运营</li>
+                <li>产品运营</li>
+            </ul>
+            <ul>
+                <li>淘宝电商</li>
+                <li>跨境电商</li>
+                <li>拼多多电商</li>
+            </ul>
+            <ul>
+                <li>计算机认证</li>
+                <li>建筑工程</li>
+                <li>项目管理</li>
+            </ul>
+            <ul>
+                <li>英语能力提升</li>
+                <li>新概念英语</li>
+                <li>职场英语</li>
+            </ul>
+        </div>
+        <ol class='alertNode-ol'>
+            <li class='text'>已选<span id='allNumber'>3</span>个:</li>
+            <li class='active' title="投资理财">投资理财<img src="image/colosd.gif"></li>
+            <li title="绘画">绘画<img src="image/colosd.gif"></li>
+            <li title="音乐">音乐<img src="image/colosd.gif"></li>
+        </ol>
+        <div id='chooseBtnNode'>选好了</div>
+    </div>
+
+    <!-- 更改兴趣模块 -->
+    <div class='interest'>
+        <span class='interest-l'>以下根据你的学习兴趣推荐</span>
+        <span class='interest-r'>更改兴趣</span>
+    </div>
+
+    <!-- 广告模块 advertisement -->
+    <div class='advertisement'>
+        <a href="#" class='advertisement-l'>
+            <img src="image/9b393ab0b939453895a203bc0b7d1c30.jpg">
+        </a>
+        <a href="#" class='advertisement-r'>
+            <img src="image/454d20a5bcf34163b0148ecc79ec2ef1.jpg">
+        </a>
+    </div>
+
+    <!-- 尾部模块 footer-->
+    <div class='footer'>
+        <div class="footer-content">
+            <div class='footer-content-l'>
+                <p class='footer-content-l-text'>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</p>
+                <ul class='footer-content-l-ul'>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">中国大学MOOC</a></li>
+                    <li><a href="#">网易卡搭编程</a></li>
+                    <li><a href="#">极客战记</a></li>
+                    <li><a href="#">有道智云</a></li>
+                </ul>
+                <p class='footer-content-l-last-text'>
+                    <span>©1997-2020 网易公司 版权所有</span><span>粤B2-20090191-18</span> <a
+                        href="#">工业和信息化部备案管理系统网站</a>
+                </p>
+            </div>
+            <div class='footer-content-r'>
+                <div class='footer-content-r-download'>
+                    <a href="#"><img src="image/app-download.gif"></a>
+                    <a href="#" class='no'><img src="image/ad-download.gif"></a>
+                </div>
+                <div class='footer-content-r-app'>
+                    <span>关注我们:</span>
+                    <a href="#" class='footer-content-r-app-wx'>
+                        <img src="image/wx.gif">
+                        <div class='footer-content-r-app-show'>
+                            <div class='footer-content-r-app-show-sc'></div>
+                            <div class='footer-content-r-app-show-text'>关注云课堂官方微信号</div>
+                            <div class='footer-content-r-app-show-title'>-领取课程免费福利，超值学习资料-</div>
+                        </div>
+                    </a>
+                    <a href="#" class="no"><img src="image/sina.gif"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- window-show 右侧广告窗-->
+    <div class='window-show'>
+        <a href="#" class='window-show-top'><img src="image/sjfxs.png"></a>
+        <ul class='window-show-ul'>
+            <li class='window-show-ul-text show-m'>
+                <div class='window-show-ul-text-name'>在线咨询</div>
+            </li>
+            <li class='window-show-ul-line'>
+                <div class='line'></div>
+            </li>
+            <li class='window-show-ul-text show-mobile'>
+                <div class='window-show-ul-text-name'>手机课堂</div>
+                <div class='show-alert'>
+                    <div class='show-alert-jt'></div>
+                    <div class='show-alert-node'>
+                        <img src="image/ewm-l.png">
+                        <p>下载APP</p>
+                    </div>
+                    <div class='show-alert-node ml15'>
+                        <img src="image/ewm-r.png">
+                        <p>关注微信</p>
+                    </div>
+                </div>
+
+            </li>
+            <li class='window-show-ul-line'>
+                <div class='line'></div>
+            </li>
+            <li class='window-show-ul-text show-t'>
+                <div class='window-show-ul-text-name'>返回顶部</div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<script src="./js/vue2.6.0.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

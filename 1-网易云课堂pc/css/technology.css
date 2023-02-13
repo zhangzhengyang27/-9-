@@ -1,0 +1,74 @@
+
+/*technology 微专业模块*/
+.technology {
+    margin-top: 43px;
+    height: 260px;
+}
+
+.technology .technology-ul {
+    width: 1206px;
+    height: 223px;
+    float: left;
+    margin-top: 15px;
+}
+
+.technology .technology-ul li {
+    height: 100%;
+    float: left;
+    width: 286px;
+    margin-right: 20px;
+}
+
+.technology .technology-ul li:hover img {
+    transform: scale(1.2);
+}
+
+.technology .technology-ul li a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.technology .technology-ul li .technology-ul-outer {
+    float: left;
+    width: 100%;
+    height: 161px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.technology .technology-ul li a .technology-image {
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+}
+
+.technology .technology-ul li a .technology-content {
+    width: 284px;
+    height: 61px;
+    border: 1px solid #f0f0f0;
+    float: left;
+    border-radius: 0 0 3px 3px;
+}
+
+.technology .technology-ul li a .technology-content .technology-content-name {
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    color: #0b0b0b;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+.technology .technology-ul li a .technology-content .technology-content-title {
+    color: #656565;
+    font-size: 13px;
+    line-height: 13px;
+    height: 13px;
+    text-indent: 10px;
+    margin-top: 8px;
+}
+
+.technology .technology-ul li:last-child {
+    margin-right: 0px;
+}

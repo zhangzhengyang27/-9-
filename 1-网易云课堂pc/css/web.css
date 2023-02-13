@@ -1,0 +1,76 @@
+
+/*web-model 下面内容模块*/
+.web-model {
+    height: 216px;
+    margin-top: 23px;
+}
+
+.web-model .seckill-tab-content-ul {
+    width: 100%;
+    height: 173px;
+    float: left;
+    margin-top: 19px;
+}
+
+.web-model .seckill-tab-content-ul li a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.web-model .seckill-tab-content-ul li:hover img {
+    transform: scale(1.15);
+}
+
+.web-model .seckill-tab-content-ul li {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 225px;
+    margin-right: 20px;
+}
+
+.web-model .seckill-tab-content-ul li:last-child {
+    margin-right: 0px;
+}
+
+.web-model .seckill-tab-content-ul li .seckill-tab-content-ul-outer {
+    float: left;
+    height: 125px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.web-model .seckill-tab-content-ul li img {
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+}
+
+.web-model .seckill-tab-content-ul li .seckill-tab-content-ul-name {
+    height: 13px;
+    line-height: 13px;
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-top: 10px;
+}
+
+.web-model .seckill-tab-content-ul li .seckill-tab-content-ul-user {
+    float: left;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    color: #6b6b6b;
+    margin-top: 13px;
+    width: 100%;
+}
+
+.web-model .seckill-tab-content-ul li.no {
+    margin-right: 0px;
+}
+
+.mt {
+    margin-top: 47px;
+}

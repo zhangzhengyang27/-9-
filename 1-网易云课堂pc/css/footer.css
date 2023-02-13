@@ -1,0 +1,191 @@
+/*advertisement 广告模块*/
+.advertisement {
+    width: 1206px;
+    height: 130px;
+    margin: 30px auto 0;
+}
+
+.advertisement a {
+    float: left;
+    height: 100%;
+}
+
+.advertisement-l {
+    margin-right: 20px;
+}
+
+/*footer 尾部模块*/
+.footer {
+    height: 184px;
+    margin-top: 26px;
+    background: #474443;
+}
+
+.footer .footer-content {
+    width: 1206px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer .footer-content .footer-content-l {
+    width: 972px;
+    float: left;
+    height: 100%;
+    font-family: "Arial", "Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-text {
+    font-size: 13px;
+    height: 13px;
+    line-height: 13px;
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 34px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-ul {
+    float: left;
+    height: 13px;
+    line-height: 13px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-ul li {
+    float: left;
+    height: 100%;
+    margin-right: 22px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-ul li a {
+    color: #fff
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-last-text {
+    height: 13px;
+    font-size: 13px;
+    line-height: 13px;
+    float: left;
+    width: 100%;
+    color: #9d9d9d;
+    margin-top: 24px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-last-text span {
+    float: left;
+    margin-right: 21px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-last-text a {
+    color: #9d9d9d;
+    float: left;
+    margin-left: 3px;
+}
+
+.footer .footer-content .footer-content-l .footer-content-l-last-text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer .footer-content .footer-content-r {
+    width: 234px;
+    height: 100%;
+    float: left;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-download {
+    height: 34px;
+    width: 100%;
+    float: left;
+    margin-top: 28px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-download a {
+    float: left;
+    margin-right: 7px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-download a.no {
+    margin: 0;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app span {
+    float: left;
+    height: 100%;
+    margin-left: 92px;
+    color: #ffffff;
+    margin-right: 7px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app a {
+    float: left;
+    margin-right: 16px;
+    position: relative;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app a.no {
+    margin: 0;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app .footer-content-r-app-wx:hover .footer-content-r-app-show {
+    display: block;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app .footer-content-r-app-wx .footer-content-r-app-show {
+    width: 240px;
+    height: 247px;
+    background: url(../image/ewm.gif) no-repeat center 87px, #fff;
+    position: absolute;
+    top: -256px;
+    left: -113px;
+    display: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app .footer-content-r-app-wx .footer-content-r-app-show .footer-content-r-app-show-sc {
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    background: url(../image/sjx.gif) no-repeat;
+    left: 50%;
+    margin-left: -8.5px;
+    bottom: -9px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app .footer-content-r-app-wx .footer-content-r-app-show .footer-content-r-app-show-text {
+    width: 100%;
+    float: left;
+    height: 13px;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #000000;
+    margin-top: 19px;
+}
+
+.footer .footer-content .footer-content-r .footer-content-r-app .footer-content-r-app-wx .footer-content-r-app-show .footer-content-r-app-show-title {
+    font-size: 11px;
+    height: 11px;
+    line-height: 11px;
+    float: left;
+    width: 100%;
+    color: #474747;
+    text-align: center;
+    margin-top: 16px;
+}

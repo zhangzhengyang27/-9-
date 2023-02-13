@@ -1,0 +1,93 @@
+
+/*live-model*/
+.live {
+    margin-top: 22px;
+    height: 287px;
+}
+
+.live .live-model {
+    width: 1254px;
+    height: 248px;
+    float: left;
+    margin-top: 15px;
+    margin-left: -12px;
+}
+
+.live .live-model li {
+    float: left;
+    width: 394px;
+    height: 124px;
+    border-radius: 3px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+}
+
+.live .live-model li.no-right {
+    margin-right: 0;
+}
+
+.live .live-model li:hover {
+    box-shadow: 0 0 5px #ccc
+}
+
+.live .live-model li a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.live .live-model li a .teacher-pic {
+    float: left;
+    width: 112px;
+    height: 100%;
+}
+
+.live .live-model li a .teacher-pic img {
+    border-radius: 50%;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.live .live-model li a .time {
+    float: left;
+    width: 282px;
+    height: 13px;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 14px;
+    color: #070707;
+}
+
+.live .live-model li a .time span {
+    float: left;
+}
+
+.live .live-model li a .time span.g {
+    color: #00a94e;
+}
+
+.live .live-model li a .time span.live-l {
+    padding-right: 13px;
+    background: url(../image/line-l.png) no-repeat right center;
+    margin-right: 9px;
+}
+
+.live .live-model li a .live-name {
+    float: left;
+    width: 266px;
+    color: #2e2e2e;
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 11px;
+    padding-right: 16px;
+}
+
+.live .live-model li a .live-teacher-name {
+    float: left;
+    width: 282px;
+    font-size: 11px;
+    color: #606060;
+    line-height: 11px;
+    margin-top: 11px;
+}

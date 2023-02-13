@@ -1,0 +1,215 @@
+/*mask 遮罩层*/
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    display: none;
+}
+
+/*alertNode 兴趣弹窗模块*/
+.alertNode {
+    width: 990px;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -232.5px 0 0 -495px;
+    background: #fff;
+    z-index: 201;
+    border-radius: 2px;
+    display: none;
+    padding-bottom: 40px;
+}
+
+.alertNode .alertNode-topName {
+    width: 100%;
+    height: 19px;
+    float: left;
+    margin-top: 43px;
+}
+
+.alertNode .alertNode-topName span {
+    float: left;
+}
+
+.alertNode .alertNode-topName span.alertNode-topName-choose {
+    line-height: 19px;
+    height: 19px;
+    font-size: 19px;
+    color: #1c1c1c;
+    margin-left: 40px;
+    margin-right: 26px;
+}
+
+.alertNode .alertNode-topName span.alertNode-topName-title {
+    line-height: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #616161;
+    margin-top: 5px;
+}
+
+.alertNode .alertNode-ul {
+    width: 910px;
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    float: left;
+    margin: 26px 0 0 40px;
+}
+
+.alertNode .alertNode-ul li {
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.alertNode .alertNode-ul li.active div {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: #37a43e;
+}
+
+.alertNode .alertNode-ul li.no {
+    margin-right: 0;
+}
+
+.alertNode .alertNode-content {
+    width: 910px;
+    float: left;
+    height: 150px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 0 0 40px;
+}
+
+.alertNode .alertNode-content ul.show {
+    display: block;
+}
+
+.alertNode .alertNode-content ul {
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: none;
+}
+
+.alertNode .alertNode-content ul li {
+    height: 32px;
+    padding: 0 20px;
+    border: 1px solid #d1d1d1;
+    float: left;
+    font-size: 13px;
+    line-height: 32px;
+    color: #4e4e4e;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 20px 20px 0 0;
+}
+
+.alertNode .alertNode-content ul li.active {
+    background: #4eae54;
+    color: #f5fbf5;
+    border-color: #4eae54;
+}
+
+.alertNode .alertNode-ol {
+    width: 910px;
+    float: left;
+    margin-left: 40px;
+    height: auto;
+}
+
+.alertNode .alertNode-ol li.text {
+    float: left;
+    height: 30px;
+    line-height: 28px;
+    color: #666666;
+    font-size: 13px;
+    border: none;
+    padding: 0;
+    margin-right: 14px;
+}
+
+.alertNode .alertNode-ol li {
+    font-size: 13px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 16px;
+    float: left;
+    color: #666;
+    border: 1px solid #d1d1d1;
+    border-radius: 14px;
+    margin-top: 19px;
+    margin-right: 16px;
+}
+
+.alertNode .alertNode-ol li img {
+    cursor: pointer;
+    margin-left: 9px;
+}
+
+.alertNode .alertNode-closed {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url(../image/bg-closed.gif);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.alertNode .alertNode-closed:hover {
+    background-image: url(../image/bg-colose-h.gif);
+}
+
+#chooseBtnNode {
+    width: 180px;
+    height: 44px;
+    float: left;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    background: #4eae54;
+    border-radius: 22px;
+    margin: 52px 0 0 405px;
+    cursor: pointer;
+}
+
+/*interest 更改兴趣模块*/
+.interest {
+    width: 1206px;
+    height: 60px;
+    background: #edf7ee;
+    border-radius: 2px;
+    margin: 40px auto 0;
+    line-height: 60px;
+}
+
+.interest .interest-l {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    float: left;
+}
+
+.interest .interest-r {
+    font-size: 13px;
+    color: #60ba65;
+    margin-left: 21px;
+    background: url(../image/in-jt.gif) no-repeat right center;
+    float: left;
+    padding-right: 15px;
+    cursor: pointer;
+}
